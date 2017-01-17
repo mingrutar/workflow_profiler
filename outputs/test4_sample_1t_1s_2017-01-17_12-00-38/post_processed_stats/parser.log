@@ -1,0 +1,41 @@
+main:182 - INFO - === Starting parser at 2017-01-17 12:02:54
+main:183 - INFO - Logging level set to debug
+check_args:777 - DEBUG - check_args::Starting check of passed in 'root' directory
+check_args:785 - DEBUG - check_args::The root directory is '/home/mingrutar/performTest/workflow-profiler/outputs/test4_sample_1t_1s_2017-01-17_12-00-38/'
+check_args:796 - DEBUG - check_args::root directory '/home/mingrutar/performTest/workflow-profiler/outputs/test4_sample_1t_1s_2017-01-17_12-00-38/' passes validation!
+check_args:805 - DEBUG - check_args::Validating workflow parameter
+check_args:806 - DEBUG -    passed in workflow arg is: 'sample'
+check_args:810 - DEBUG - check_args::The global var PL has been set to workflow 'sample_dict'
+check_args:811 - DEBUG -    The workflow steps for 'sample_dict' are:
+check_args:824 - DEBUG - ['Stage1']
+check_args:825 - DEBUG -    The workflow dir seach strings for 'sample_dict' are:
+check_args:827 - DEBUG - ['stage1']
+check_args:828 - DEBUG -    The workflow dir search strings for 'sample_dict' are:
+check_args:829 - DEBUG -      Step   Search Str
+check_args:831 - DEBUG -      Stage1  --> stage1
+check_args:860 - DEBUG - check_args::Starting check of metrics
+check_args:877 - DEBUG - check_args::Metric choice is valid.
+check_args:893 - DEBUG - check_args::Validating output dir.
+compute_stats:1510 - INFO - Metric	 iostat 	Step	 Stage1 	Mean	 530.380000 	Median	 487.500000 	Stdev	 260.850000 	Max	 1546.000000
+decode_data:411 - INFO - Running sar:
+sar -f "/home/mingrutar/performTest/workflow-profiler/outputs/test4_sample_1t_1s_2017-01-17_12-00-38/run.test4_1T..stage1.1u/test4_1T..stage1.1u.1s.sar.data"  > "/home/mingrutar/performTest/workflow-profiler/outputs/test4_sample_1t_1s_2017-01-17_12-00-38/post_processed_stats/decoded_cpu_sr.txt"
+compute_stats:1510 - INFO - Metric	 sar 	Step	 Stage1 	Mean	 0.030000 	Median	 0.020000 	Stdev	 0.030000 	Max	 0.060000
+decode_data:411 - INFO - Running sar:
+sar -f "/home/mingrutar/performTest/workflow-profiler/outputs/test4_sample_1t_1s_2017-01-17_12-00-38/run.test4_1T..stage1.1u/test4_1T..stage1.1u.1s.sar.data" -b > "/home/mingrutar/performTest/workflow-profiler/outputs/test4_sample_1t_1s_2017-01-17_12-00-38/post_processed_stats/decoded_io_sr.txt"
+compute_stats:1510 - INFO - Metric	 sar_reads 	Step	 Stage1 	Mean	 0.000000 	Median	 0.000000 	Stdev	 0.000000 	Max	 0.000000
+decode_data:411 - INFO - Running sar:
+sar -f "/home/mingrutar/performTest/workflow-profiler/outputs/test4_sample_1t_1s_2017-01-17_12-00-38/run.test4_1T..stage1.1u/test4_1T..stage1.1u.1s.sar.data" -b > "/home/mingrutar/performTest/workflow-profiler/outputs/test4_sample_1t_1s_2017-01-17_12-00-38/post_processed_stats/decoded_io_sr.txt"
+compute_stats:1510 - INFO - Metric	 sar_writes 	Step	 Stage1 	Mean	 25.190000 	Median	 0.300000 	Stdev	 47.600000 	Max	 130.370000
+decode_data:411 - INFO - Running sar:
+sar -f "/home/mingrutar/performTest/workflow-profiler/outputs/test4_sample_1t_1s_2017-01-17_12-00-38/run.test4_1T..stage1.1u/test4_1T..stage1.1u.1s.sar.data" -r > "/home/mingrutar/performTest/workflow-profiler/outputs/test4_sample_1t_1s_2017-01-17_12-00-38/post_processed_stats/decoded_active_mem_sr.txt"
+compute_stats:1510 - INFO - Metric	 active_mem 	Step	 Stage1 	Mean	 0.290000 	Median	 0.290000 	Stdev	 0.000000 	Max	 0.300000
+get_starting_time:2151 - DEBUG - File: /home/mingrutar/performTest/workflow-profiler/outputs/test4_sample_1t_1s_2017-01-17_12-00-38/post_processed_stats/2017-01-17_12.02.54_iostat.csv
+get_starting_time:2152 - DEBUG - ['IOSTAT: time waiting on io\r\n', 'Stage1\r\n', 'time in interval: 3s,average time waiting on io per 1.0s\r\n', '2017-01-17 12:00:38,46\r\n', '2017-01-17 12:00:39,6\r\n', '2017-01-17 12:00:40,8\r\n', '2017-01-17 12:00:41,10\r\n', '2017-01-17 12:00:42,8\r\n', '2017-01-17 12:00:43,33\r\n', '2017-01-17 12:00:44,485\r\n', '2017-01-17 12:00:45,497\r\n', '2017-01-17 12:00:46,398\r\n', '2017-01-17 12:00:47,534\r\n', '2017-01-17 12:00:48,617\r\n', '2017-01-17 12:00:49,477\r\n', '2017-01-17 12:00:50,505\r\n', '2017-01-17 12:00:51,513\r\n', '2017-01-17 12:00:52,509\r\n', '2017-01-17 12:00:53,498\r\n', '2017-01-17 12:00:54,463\r\n', '2017-01-17 12:00:55,465\r\n', '2017-01-17 12:00:56,502\r\n', '2017-01-17 12:00:57,487\r\n', '2017-01-17 12:00:58,504\r\n', '2017-01-17 12:00:59,493\r\n', '2017-01-17 12:01:00,480\r\n', '2017-01-17 12:01:01,516\r\n', '2017-01-17 12:01:02,486\r\n', '2017-01-17 12:01:03,542\r\n', '2017-01-17 12:01:04,537\r\n', '2017-01-17 12:01:05,510\r\n', '2017-01-17 12:01:06,564\r\n', '2017-01-17 12:01:07,608\r\n', '2017-01-17 12:01:08,566\r\n', '2017-01-17 12:01:09,516\r\n', '2017-01-17 12:01:10,515\r\n', '2017-01-17 12:01:11,546\r\n', '2017-01-17 12:01:12,524\r\n', '2017-01-17 12:01:13,528\r\n', '2017-01-17 12:01:14,495\r\n', '2017-01-17 12:01:15,566\r\n', '2017-01-17 12:01:16,924\r\n', '2017-01-17 12:01:17,997\r\n', '2017-01-17 12:01:18,1174\r\n', '2017-01-17 12:01:19,1082\r\n', '2017-01-17 12:01:20,1106\r\n', '2017-01-17 12:01:21,1155\r\n', '2017-01-17 12:01:22,1287\r\n', '2017-01-17 12:01:23,1546\r\n', '2017-01-17 12:01:24,555\r\n', '2017-01-17 12:01:25,464\r\n', '2017-01-17 12:01:26,465\r\n', '2017-01-17 12:01:27,488\r\n', '2017-01-17 12:01:28,474\r\n', '2017-01-17 12:01:29,469\r\n', '2017-01-17 12:01:30,433\r\n', '2017-01-17 12:01:31,531\r\n', '2017-01-17 12:01:32,469\r\n', '2017-01-17 12:01:33,459\r\n', '2017-01-17 12:01:34,457\r\n', '2017-01-17 12:01:35,472\r\n', '2017-01-17 12:01:36,470\r\n', '2017-01-17 12:01:37,473\r\n', '2017-01-17 12:01:38,460\r\n', '2017-01-17 12:01:39,457\r\n', '2017-01-17 12:01:40,460\r\n', '2017-01-17 12:01:41,634\r\n', '2017-01-17 12:01:42,562\r\n', '2017-01-17 12:01:43,485\r\n', '2017-01-17 12:01:44,474\r\n', '2017-01-17 12:01:45,462\r\n', '2017-01-17 12:01:46,472\r\n', '2017-01-17 12:01:47,466\r\n', '2017-01-17 12:01:48,475\r\n', '2017-01-17 12:01:49,477\r\n', '2017-01-17 12:01:50,457\r\n', '2017-01-17 12:01:51,535\r\n', '2017-01-17 12:01:52,464\r\n', '2017-01-17 12:01:53,462\r\n']
+get_starting_time:2151 - DEBUG - File: /home/mingrutar/performTest/workflow-profiler/outputs/test4_sample_1t_1s_2017-01-17_12-00-38/post_processed_stats/2017-01-17_12.02.54_sar.csv
+get_starting_time:2152 - DEBUG - ['SAR: cpu load (all cores)\r\n', 'Stage1\r\n', 'time in interval: 3s,average cpu load (all cores) per 1.0s\r\n', '2017-01-17 12:00:39,0.06\r\n', '2017-01-17 12:00:40,0.0\r\n', '2017-01-17 12:00:41,0.0\r\n', '2017-01-17 12:00:42,0.06\r\n', '2017-01-17 12:00:43,0.0\r\n', '2017-01-17 12:00:47,0.03\r\n']
+get_starting_time:2151 - DEBUG - File: /home/mingrutar/performTest/workflow-profiler/outputs/test4_sample_1t_1s_2017-01-17_12-00-38/post_processed_stats/2017-01-17_12.02.54_sar_reads.csv
+get_starting_time:2152 - DEBUG - ['SAR_READS: io reads in mb/sec\r\n', 'Stage1\r\n', 'time in interval: 3s,average io reads in mb/sec per 1.0s\r\n', '2017-01-17 12:00:39,0.0\r\n', '2017-01-17 12:00:40,0.0\r\n', '2017-01-17 12:00:41,0.0\r\n', '2017-01-17 12:00:42,0.0\r\n', '2017-01-17 12:00:43,0.0\r\n', '2017-01-17 12:00:47,0.0\r\n']
+get_starting_time:2151 - DEBUG - File: /home/mingrutar/performTest/workflow-profiler/outputs/test4_sample_1t_1s_2017-01-17_12-00-38/post_processed_stats/2017-01-17_12.02.54_sar_writes.csv
+get_starting_time:2152 - DEBUG - ['SAR_WRITES: io writes in mb/sec\r\n', 'Stage1\r\n', 'time in interval: 3s,average io writes in mb/sec per 1.0s\r\n', '2017-01-17 12:00:39,0.09\r\n', '2017-01-17 12:00:40,0.05\r\n', '2017-01-17 12:00:41,0.51\r\n', '2017-01-17 12:00:42,0.05\r\n', '2017-01-17 12:00:43,20.05\r\n', '2017-01-17 12:00:47,130.37\r\n']
+get_starting_time:2151 - DEBUG - File: /home/mingrutar/performTest/workflow-profiler/outputs/test4_sample_1t_1s_2017-01-17_12-00-38/post_processed_stats/2017-01-17_12.02.54_active_mem.csv
+get_starting_time:2152 - DEBUG - ['ACTIVE_MEM: committed memory (gb)\r\n', 'Stage1\r\n', 'time in interval: 3s,average committed memory (gb) per 1.0s\r\n', '2017-01-17 12:00:39,0.29\r\n', '2017-01-17 12:00:40,0.29\r\n', '2017-01-17 12:00:41,0.29\r\n', '2017-01-17 12:00:42,0.29\r\n', '2017-01-17 12:00:43,0.29\r\n', '2017-01-17 12:00:47,0.3\r\n']

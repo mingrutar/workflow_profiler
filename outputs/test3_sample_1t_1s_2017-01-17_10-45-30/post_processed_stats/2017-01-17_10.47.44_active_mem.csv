@@ -1,0 +1,9 @@
+ACTIVE_MEM: committed memory (gb)
+Stage1
+time in interval: 3s,average committed memory (gb) per 1.0s
+2017-01-17 10:45:31,0.3
+2017-01-17 10:45:32,0.3
+2017-01-17 10:45:33,0.3
+2017-01-17 10:45:34,0.3
+2017-01-17 10:45:35,0.3
+2017-01-17 10:46:30,0.3
